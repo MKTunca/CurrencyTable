@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="row">
+        <div class="col-5 mx-auto">
+            <h3 class="bg-primary text-white p-3">
+                Döviz Tablosu
+            </h3>
+            
+            
+            
+            
+           
+              <table class="table table-bordered" >
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Dolar Alış</th>
+                        <th>Dolar Satış</th>
+                        <th>Dolar Sembol</th>
+                        
+                    </tr>
+                </thead>
+                  <tbody>
+                    <tr *ngFor="let item of buy;let i=index;">
+                        <td>{{i+1}}</td>
+                        <td>{{item.USD.buy}}</td>
+                        <td>{{item.USD.sell}}</td>
+                        <td>{{item.USD.symbol}}</td>
+                        
+                    </tr>
+                    
+                  </tbody>
+
+                </table>
+           
+            
+        </div>
+    </div>
+</div>
+
